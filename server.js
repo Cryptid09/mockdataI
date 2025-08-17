@@ -4,7 +4,7 @@ const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults({
-  static: null // 🚫 disable looking for ./public
+  static: "./public" // Provide a valid path or remove this line entirely
 });
 
 server.use(middlewares);
