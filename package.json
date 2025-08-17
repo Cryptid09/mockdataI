@@ -6,7 +6,6 @@
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node server.js"
   },
@@ -14,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/Cryptid09/mockdataI.git"
   },
-  "keywords": ["json-server", "mock", "api"],
+  "keywords": [
+    "json-server",
+    "mock",
+    "api"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
