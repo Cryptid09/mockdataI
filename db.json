@@ -1,0 +1,196 @@
+{
+    "batteries": [
+      {
+        "id": 1,
+        "serial_number": "BAT001234",
+        "model_id": "LI-ION-48V-100AH",
+        "status": "active",
+        "health_score": 95,
+        "current_owner_id": 1
+      },
+      {
+        "id": 2,
+        "serial_number": "BAT001235",
+        "model_id": "LI-ION-48V-150AH",
+        "status": "maintenance",
+        "health_score": 78,
+        "current_owner_id": 2
+      },
+      {
+        "id": 3,
+        "serial_number": "BAT001236",
+        "model_id": "LI-ION-72V-100AH",
+        "status": "active",
+        "health_score": 88,
+        "current_owner_id": 3
+      }
+    ],
+    "battery_telemetry": [
+      {
+        "id": 1,
+        "battery_id": 1,
+        "voltage": 48.2,
+        "current": 12.5,
+        "soc": 85
+      },
+      {
+        "id": 2,
+        "battery_id": 2,
+        "voltage": 47.8,
+        "current": 8.3,
+        "soc": 62
+      },
+      {
+        "id": 3,
+        "battery_id": 3,
+        "voltage": 71.5,
+        "current": 15.2,
+        "soc": 92
+      }
+    ],
+    "consumers": [
+      {
+        "id": 1,
+        "name": "Rajesh Kumar",
+        "phone": "+91-9876543210",
+        "email": "rajesh.kumar@email.com",
+        "pan": "ABCDE1234F",
+        "aadhar": "1234-5678-9012",
+        "kyc_status": "verified"
+      },
+      {
+        "id": 2,
+        "name": "Priya Sharma",
+        "phone": "+91-9876543211",
+        "email": "priya.sharma@email.com",
+        "pan": "FGHIJ5678K",
+        "aadhar": "2345-6789-0123",
+        "kyc_status": "pending"
+      },
+      {
+        "id": 3,
+        "name": "Amit Patel",
+        "phone": "+91-9876543212",
+        "email": "amit.patel@email.com",
+        "pan": "KLMNO9012P",
+        "aadhar": "3456-7890-1234",
+        "kyc_status": "verified"
+      }
+    ],
+    "consumer_documents": [
+      {
+        "id": 1,
+        "consumer_id": 1,
+        "document_type": "aadhar",
+        "file_url": "/documents/aadhar_1.pdf",
+        "verification_status": "verified"
+      },
+      {
+        "id": 2,
+        "consumer_id": 1,
+        "document_type": "pan",
+        "file_url": "/documents/pan_1.pdf",
+        "verification_status": "verified"
+      },
+      {
+        "id": 3,
+        "consumer_id": 2,
+        "document_type": "aadhar",
+        "file_url": "/documents/aadhar_2.pdf",
+        "verification_status": "pending"
+      }
+    ],
+    "finance_applications": [
+      {
+        "id": 1,
+        "consumer_id": 1,
+        "battery_id": 1,
+        "amount": 50000,
+        "status": "approved",
+        "credit_score": 750
+      },
+      {
+        "id": 2,
+        "consumer_id": 2,
+        "battery_id": 2,
+        "amount": 75000,
+        "status": "pending",
+        "credit_score": 680
+      },
+      {
+        "id": 3,
+        "consumer_id": 3,
+        "battery_id": 3,
+        "amount": 60000,
+        "status": "approved",
+        "credit_score": 720
+      }
+    ],
+    "finance_accounts": [
+      {
+        "id": 1,
+        "consumer_id": 1,
+        "battery_id": 1,
+        "finance_type": "lease",
+        "principal": 50000,
+        "emi_amount": 2500,
+        "tenure": 24
+      },
+      {
+        "id": 2,
+        "consumer_id": 3,
+        "battery_id": 3,
+        "finance_type": "loan",
+        "principal": 60000,
+        "emi_amount": 3000,
+        "tenure": 20
+      }
+    ],
+    "emi_schedules": [
+      {
+        "id": 1,
+        "account_id": 1,
+        "due_date": "2025-09-15",
+        "amount": 2500,
+        "status": "paid",
+        "payment_date": "2025-08-14",
+        "overdue_days": 0
+      },
+      {
+        "id": 2,
+        "account_id": 1,
+        "due_date": "2025-09-15",
+        "amount": 2500,
+        "status": "pending",
+        "payment_date": null,
+        "overdue_days": 0
+      },
+      {
+        "id": 3,
+        "account_id": 2,
+        "due_date": "2025-08-20",
+        "amount": 3000,
+        "status": "overdue",
+        "payment_date": null,
+        "overdue_days": 3
+      }
+    ],
+    "payments": [
+      {
+        "id": 1,
+        "account_id": 1,
+        "amount": 2500,
+        "payment_mode": "upi",
+        "transaction_id": "TXN123456789",
+        "timestamp": "2025-08-14T10:30:00Z"
+      },
+      {
+        "id": 2,
+        "account_id": 1,
+        "amount": 2500,
+        "payment_mode": "bank_transfer",
+        "transaction_id": "TXN123456790",
+        "timestamp": "2025-07-14T15:45:00Z"
+      }
+    ]
+  }
