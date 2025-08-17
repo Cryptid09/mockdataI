@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "Mock JSON API with json-server",
   "main": "server.js",
-  "dependencies": {
-    "json-server": "^1.0.0-beta.3"
-  },
   "scripts": {
-    "start": "node server.js"
+    "start": "npx json-server --watch db.json --port 10000"
   },
   "repository": {
     "type": "git",
@@ -23,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Cryptid09/mockdataI/issues"
   },
-  "homepage": "https://github.com/Cryptid09/mockdataI#readme"
+  "homepage": "https://github.com/Cryptid09/mockdataI#readme",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
 }
