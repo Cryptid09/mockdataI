@@ -10,7 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+*.local
 
+# Keep public folder tracked
+!public/
 
 # Editor directories and files
 .vscode/*
